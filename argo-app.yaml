@@ -7,7 +7,7 @@ spec:
   project: default
 
   source: 
-    repoURL: https://github.com/Amungun/kubernetes-manifests/blob/main/SpringBoot-Mongo-DynamicPV.yml
+    repoURL: https://github.com/Amungun/argocd
     targetRevision: HEAD
     path: dev
 destination: https://kubernetes.default.svc
