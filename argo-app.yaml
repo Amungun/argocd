@@ -10,4 +10,16 @@ spec:
     repoURL: https://github.com/Amungun/argocd
     targetRevision: HEAD
     path: dev
-destination: https://kubernetes.default.svc
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: myapp
+  
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    
+    automated:
+      selfHeal: true
+      prune: true
+  
+ 
